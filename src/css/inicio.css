@@ -9,7 +9,7 @@
     --color-card: rgba(144, 224, 239, 1);    /* 90E0EF */
   
   
-  /* Color adicional para estilo aesthetic */
+  /* Color adicional  */
   --color-accent: rgba(0, 119, 182, 1); /*  Color de barra lateral izquuierda 0077B6 */
   ; /* E4EAEC */
     --font-family-primary: serif;
@@ -538,7 +538,7 @@
   .grid-item2 img {
     width: 80%;
     height: auto;
-    z-index: 2;
+    z-index: 2;/* animacion*/
     animation: float 6s ease-in-out infinite;
   }
   

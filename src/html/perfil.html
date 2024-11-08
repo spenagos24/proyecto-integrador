@@ -8,6 +8,13 @@
   <!--  Bootstrap -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: georgia;
+      font-style: italic;
+    }
     body{
       background: url(/login/background.jg);
       background-position: center center;
@@ -56,17 +63,17 @@
     <div class="row">
       <!-- Columna de la imagen de perfil y nombre -->
       <div class="col-12 col-md-4 text-center">
-        <img src="/imagenes/foto_perfil.jpg" alt="Imagen de Perfil" class="profile-img">
+        <img src="../img/foto_perfil.jpg" alt="Imagen de Perfil" class="profile-img">
         <h3>Juan Pérez</h3>
-        <p>Desarrollador Web</p>
+        <p>mecanico</p>
       </div>
       
       <!--  enlaces y contenido -->
       <div class="col-12 col-md-8">
         <div class="list-group">
           <!-- Enlaces  para cada sección -->
-          <a href="/perfil/descripcion_general.html" class="list-group-item list-group-item-action" target="contenido">Descripción General</a>
-          <a href="/perfil/editar_perfil.html" class="list-group-item list-group-item-action" target="contenido">Editar Perfil</a>
+          <a href="../html/descripcion_general.html" class="list-group-item list-group-item-action" target="contenido">Descripción General</a>
+          <a href="../html/editar_perfil.html" class="list-group-item list-group-item-action" target="contenido">Editar Perfil</a>
           <a href="https://www.example.com/settings" class="list-group-item list-group-item-action" target="contenido">Ajustes</a>
           <a href="https://www.example.com/change-password" class="list-group-item list-group-item-action" target="contenido">Cambiar Contraseña</a>
         </div>
@@ -74,7 +81,7 @@
         <!--  detalles -->
         <div class="mt-4 iframe-container">
           <!-- Aquí se cargará el contenido  -->
-          <iframe name="contenido" src="/perfil/descripcion_general.html" frameborder="0"></iframe>
+          <iframe name="contenido" src="../html/descripcion_general.html" frameborder="0"></iframe>
         </div>
       </div>
     </div>
