@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="inicio.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  
+    <!--iconos bostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+
+  <title>Document</title>
+  <!--header o emcabezado-->
+</head>
+<body>
+
+    <header>
+   <div class="contenedor">
+     <label for="izquierda" class="boton-menu">☰</label>
+     <img src="/imagenes/logo.png" alt="" srcset="" width="30px">
+           <span>dashboard</span>
+      </div>
+ <div class="izquierdo">
+       <button> <i class="fas fa-search"></i></button>
+       <button onclick="toggleNotifi()">
+        <div class="icon">
+          <i class="fa-solid fa-bell"></i>
+        </div>
+        <div class="notifi-box" id="box">
+          <h2>Notifications <span>6</span></h2>
+          <div class="notifi-item">
+            <img src="/imagenes/hacker.png" alt="img">
+            <div class="text">
+               <h4>Elias Abdurrahman</h4>
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <img src="/imagenes/actriz.png" alt="img">
+            <div class="text">
+               <h4>John Doe</h4>
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <img src="/imagenes/hombre.png" alt="img">
+            <div class="text">
+               <h4>Emad Ali</h4>
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <img src="/imagenes/mujer-de-negocios.png" alt="img">
+            <div class="text">
+               <h4>Ekram Abu </h4>
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+          <div class="notifi-item">
+            <img src="/imagenes/mujer.png" alt="img">
+            <div class="text">
+               <h4>Jane Doe</h4>
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+          <div class="notifi-item">
+            <img src="/imagenes/nino.png" alt="img">
+            <div class="text">
+               <h4>Jane Doe</h4>
+               <p>@lorem ipsum dolor sit amet</p>
+              </div> 
+          </div>
+    
+        </div>
+  
+    </button>
+    
+     <label for="derecha">
+       <img src="/imagenes/foto_perfil.jpg" alt="Foto de perfil">
+     </label>
+     </div>
+</header>
+
+<!--checkbox-->
+<input type="checkbox" id="izquierda">
+ <input type="checkbox" id="derecha">
+<!--barra lateral-->
+ <div class="barras">
+   <div class="izquierda-barra">
+     <nav id="">
+   <div class="cerrar-barra-izquierda">
+    <img src="/imagenes/logo.png" alt="" srcset="" width="30px">
+                 <label for="izquierda">
+                  <ion-icon name="exit-outline"></ion-icon>
+</label>
+   </div>
+      <div class="navegacion">
+        <ul>
+<li><a href="#"><i class="fas fa-home"></i><span>Inicio</span></a></li>
+<li><a href="#"><i class="fas fa-tools"></i><span>Taller</span></a></li>
+<li><a href="#"><i class="fas fa-building"></i><span>Administración</span></a></li>
+<li><a href="/caja/caja.html"><i class="fas fa-cash-register"></i><span>Caja</span></a></li>
+<li><a href="/encuenta de satisfacción al cliente joel/encuesta.html"><i class="fas fa-poll"></i><span>Encuesta</span></a></li>
+
+<li><a href="#"><i class="fas fa-archive"></i><span>Inventario</span></a></li>
+<li><a href="#"><i class="fas fa-address-book"></i><span>Contactos</span></a></li>
+<li><a href="#"><i class="fas fa-cogs"></i><span>Configuraciones</span></a></li>
+
+    </ul>
+        
+      </div>
+     </nav>
+   </div>
+   <div class="derecha">
+     <div class="usuario">
+     <img src="/imagenes/foto_perfil.jpg" alt="Foto de perfil" class="">
+     <h3>nombre de usuario</h3>
+     <p></p>
+          <label for="derecha"><i class="bi bi-box-arrow-left"></i></label>
+     </div>
+<div class="descripción">
+  
+    <p id="P">descripción<strong></strong></p>
+</div>
+     <nav class="navegacion-derecha">
+      <ul class="ul">
+  <li><a href="/perfil/perfil.html"><i class="fas fa-user"></i> <span>perfil</span></a></li>
+  <li><a href="#"><i class="fas fa-cog"></i> <span>configuraciones</span></a></li>
+  <li><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
+  <li><a href="/login/index.html" id="miBoton"><i class="fas fa-sign-out-alt"></i><span >cerrar sesion</span></a></li>
+</ul>
+
+     </nav>
+     
+   </div>
+   
+ </div>
+ <!---->
+<!-- trabajando en esta parte-->
+<div class="bienvenida">
+  <div id="bloque_divisor">
+    <div class="grid-container">
+      <div class="grid-item1">
+        <div class="welcome-content">
+          <h1>Bienvenidos</h1>
+          <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio, vitae convallis elit sagittis at.</p>
+          <p>Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula.</p>
+          <div class="cta-buttons">
+            <button class="primary-btn">Explora más</button>
+            <button class="secondary-btn">Contáctanos</button>
+          </div>
+          <div class="features">
+            <div class="feature">
+              <i class="feature-icon">★</i>
+              <span>Calidad Premium</span>
+            </div>
+            <div class="feature">
+              <i class="feature-icon">✓</i>
+              <span>Garantía Total</span>
+            </div>
+            <div class="feature">
+              <i class="feature-icon">♥</i>
+              <span>Atención 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item2">
+        <img src="/imagenes/undraw_welcome_re_h3d9.svg" alt="Bienvenida ilustración">
+        <div class="floating-shapes">
+          <div class="shape shape1"></div>
+          <div class="shape shape2"></div>
+          <div class="shape shape3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<tag>
+  <!--aqui termina la parte que estamos trabajando-->
+</tag>
+<section class="servicios">
+  <article class="cards_servicio Content">
+    <div class="card_servicios">
+      <h2>
+        nuestros servicios 
+      </h2>
+      <p>
+        Nulla gravida orci a odio, vitae convallis elit sagittis at. 
+      Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. 
+      </p>
+    </div>
+    <div class="servicios_cards_card">
+    <div class="tarjeta">
+    <i class="bi bi-wrench"></i>
+    <h2>Mantenimiento Preventivo</h2>
+    <ul>
+        <li>Cambio de aceite y filtro</li>
+        <li>Revisión de frenos y pastillas de freno</li>
+        <li>Comprobación de líquidos</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-bug"></i>
+    <h2>Diagnóstico de Problemas</h2>
+    <ul>
+        <li>Uso de herramientas de diagnóstico</li>
+        <li>Inspección visual del motor</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-gear"></i>
+    <h2>Reparaciones Mecánicas</h2>
+    <ul>
+        <li>Sustitución de piezas dañadas</li>
+        <li>Reparación de sistemas de suspensión</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-paint-bucket"></i>
+    <h2>Servicios de Carrocería</h2>
+    <ul>
+        <li>Reparación de daños por accidentes</li>
+        <li>Pintura de carrocerías</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-shield-lock"></i>
+    <h2>Revisiones de Seguridad</h2>
+    <ul>
+        <li>Inspección de luces y señales</li>
+        <li>Verificación de neumáticos</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-cpu"></i>
+    <h2>Instalación de Accesorios</h2>
+    <ul>
+        <li>Montaje de sistemas de audio</li>
+        <li>Instalación de sistemas de navegación</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-speedometer"></i>
+    <h2>Pruebas de Manejo</h2>
+    <ul>
+        <li>Pruebas en carretera</li>
+        <li>Ajustes de sistemas de dirección</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-person-check"></i>
+    <h2>Atención al Cliente</h2>
+    <ul>
+        <li>Explicación de problemas a los clientes</li>
+        <li>Presupuestar costos de reparación</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-book"></i>
+    <h2>Formación y Capacitación</h2>
+    <ul>
+        <li>Participación en cursos de actualización</li>
+        <li>Prácticas de seguridad</li>
+    </ul>
+</div>
+
+<div class="tarjeta">
+    <i class="bi bi-file-earmark-text"></i>
+    <h2>Gestión Administrativa</h2>
+    <ul>
+        <li>Registro de trabajos realizados</li>
+        <li>Manejo de inventario</li>
+    </ul>
+</div>
+
+      
+    </div>
+    <button class="boton_saber_mas ojo">saber mas</button>
+  </article>
+</section>
+<tag>
+  <!--contactos-->
+</tag>
+
+<section class="section_formulario">
+  <div class="formulario_de_contactos">
+    <div class="texto_formulario">
+      <div class="texto_form">
+        <h2>Contactanos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula, nunc eget tincidunt fermentum, lacus mi bibendum ex, a gravida nisi quam at velit.</p>
+      </div>
+      <form action="">
+        <div class="input_text">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+          
+          <label for="email">Tu email</label>
+          <input type="email" id="email" placeholder="Ingresa tu email">
+          
+          <label for="mensaje">Tu mensaje</label>
+          <textarea id="mensaje" cols="30" rows="5" placeholder="Tu mensaje"></textarea>
+        </div>
+        <input type="submit" value="Enviar mensaje" id="btn">
+      </form>
+    </div>
+
+    <div class="info">
+      <div class="info-img">
+        <img src="/imagenes/undraw_contact_us_re_4qqt.svg" alt="" width="100%">
+      </div>
+      
+        <div class="text-contacto">
+  
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt"></i>
+    <p>Ubicación: Medellín, Colombia <br> Coordenadas: 6.2442° N, 75.5812° W</p>
+  </div>
+
+  
+  <div class="contact-item">
+    <i class="fas fa-phone-alt"></i>
+    <p>Teléfono: +57 300 123 4567</p>
+  </div>
+
+ 
+  <div class="contact-item">
+    <i class="fas fa-envelope"></i>
+    <p>Email: ejemplo@email.com</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="secion_de_preguntas">
+      <h2>
+      preguntas frecuentes?
+    </h2>
+  <div class="contenedor_de_preguntas">
+  <div class="imagen_de_la_secion_de_preguntas">
+  <img src="/imagenes/undraw_faq_re_31cw.svg" alt="">
+</div>
+<ediv class="detalles">
+  <details>
+    <summary>¿Qué es el servicio?</summary>
+    <p>El servicio es una plataforma diseñada para facilitar el acceso a información útil y relevante.</p>
+  </details>
+
+  <details>
+    <summary>¿Cómo puedo registrarme?</summary>
+    <p>Puedes registrarte haciendo clic en el botón "Registrarse" y siguiendo las instrucciones en pantalla.</p>
+  </details>
+
+  <details>
+    <summary>¿Dónde puedo encontrar soporte?</summary>
+    <p>El soporte está disponible en la sección de "Contacto" en nuestro sitio web.</p>
+  </details>
+
+  <details>
+    <summary>¿Puedo cancelar mi suscripción?</summary>
+    <p>Sí, puedes cancelar tu suscripción en cualquier momento desde tu perfil.</p>
+  </details>
+
+  <details>
+    <summary>¿Qué métodos de pago aceptan?</summary>
+    <p>Aceptamos tarjetas de crédito, débito y PayPal como métodos de pago.</p>
+  </details>
+</div>
+
+  </div>
+
+</section>
+
+  <!--footer o pie de página
+  ////////////////////////////
+  /////////////////////////////
+      ////////////////////
+          ///////////
+             //////--> 
+
+ <div class="contenidos">
+  <footer class="footer">
+      <ul class="iconos_redes_sociales">
+        
+        <li class="iconos_elementos">
+          <a href="" class="iconos">
+<i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="iconos_elementos">
+          <a href="" class="iconos">
+        <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </li>
+        <li class="iconos_elementos">
+          <a href="" class="iconos">
+<i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li class="iconos_elementos">
+          <a href="" class="iconos">
+<i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Inicio </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Equipo </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Contacto </a>
+        </li>
+        <li class="menu-elem">
+          <a href="" class="menu-icon"> Sobre Nosotros </a>
+        </li>
+      </ul>
+      <p class="texto">@2050 | Todos los derechos desactualizados</p>
+    </footer>
+</div>
+
+
+<script src="/inicio/notificacion.js"></script>
+<script src="/inicio/script.js"></script>
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

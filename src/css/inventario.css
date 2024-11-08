@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content:flex-start ;
+    align-items:center;
+}
+
+body {
+    background: url(images/background.jpg)
+    center center/cover no-repeat;
+    background-position: ;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+
+}
+
+h1 {
+    color: #fefae0;
+    font-family: Amita;
+    margin: 20px auto;
+    width: 450px;
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+img {
+    width: 470px;
+    height: 300px;
+    margin: 10px;
+    border: 10px solid #fff;
+    transition-duration: 1s;
+}
+
+img:hover {
+    border: 5px solid #00B4D8;
+    transform: scale(1.2);
+    filter: none;
+}
+
+.listado {
+    background-color: #00B4D8;
+    opacity: 50%;
+
+}
+
