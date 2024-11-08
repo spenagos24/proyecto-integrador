@@ -28,6 +28,7 @@
   }
   body{
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -81,7 +82,7 @@
     font-size: 25px;
   }
   
-  /* estilos de npotificaciones
+  /* estilos de notificaciones
   //////////////////////////////
   ///////////////////////////////
   /////////////////////////////*/
@@ -413,11 +414,12 @@
   .bienvenida {
     background: url(background.jpg) center/cover no-repeat;
     min-height: 100vh;
-    margin-bottom: 300px;
+    margin-bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
   }
   
   #bloque_divisor {
@@ -426,11 +428,13 @@
     align-items: center;
     width: 80%;
     min-height: 600px;
-    background: var(--color-card);
+    background: var();
     backdrop-filter: blur(23px);
     margin-top: 30px;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
+
   }
   
   .grid-container {
@@ -439,6 +443,7 @@
     gap: 40px;
     width: 100%;
     padding: 40px;
+    
   }
   
   .grid-item1 {
@@ -450,10 +455,12 @@
     padding: 40px;
     border-radius: 15px;
     text-align: center;
+    
   }
   
   .welcome-content {
     max-width: 500px;
+  
   }
   
   .grid-item1 h1 {
@@ -614,6 +621,7 @@
       width: 100%;
       display: flex;
       flex-direction: column;
+      border: 2px solid red;
     }
   
   
@@ -622,12 +630,15 @@
     background: #ffffff;
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    align-items: flex-start;
+    border: 2px solid green;
+    margin-bottom: 100px;
   }
   
   .content {
     max-width: 1440px;
     padding: 0 20px;
+    border: 2px solid red;
   }
   
   .cards_servicio {
@@ -832,7 +843,7 @@
     color: #000;
   }
   
-  section .formulario_de_contactos .texto_formulario {
+  .section_formulario .formulario_de_contactos .texto_formulario {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1077,3 +1088,4 @@
       margin-left: 0;
     }
   }
+  
