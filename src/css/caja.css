@@ -6,7 +6,7 @@
     font-style: italic;
 }
 body{
-    background: url(/login/background.jpg);
+    background: url(../img/background.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
