@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--iconos bostrap-->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/perfil.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="contenedor">
+      <label for="izquierda" class="boton-menu">☰</label>
+      <img src="../img/logo.png" alt="" srcset="" width="30px">
+ 
+    </div>
+    <div class="izquierdo">
+      <button> <i class="fas fa-search"></i></button>
+      <button onclick="toggleNotifi()">
+        <i class="fa-solid fa-bell"></i>
+      </button>
+      <div class="notifi-box" id="box">
+        <h2>Notifications <span>6</span></h2>
+        <div class="notifi-item">
+          <img src="../img/hacker.png" alt="img">
+          <div class="text">
+            <h4>Gustavo Montoya @Asesor </h4>
+            <p>Registra vehículo TKD125</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/actriz.png" alt="img">
+          <div class="text">
+            <h4>Joel Insano @Tecnico</h4>
+            <p>Inicia Proceso vehíulo IFT178</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/hombre.png" alt="img">
+          <div class="text">
+            <h4>Sebastian Penagos @Calidad</h4>
+            <p>@aprueba Vehículo LUP890</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/mujer-de-negocios.png" alt="img">
+          <div class="text">
+            <h4>Andrea Torres @Facturacion</h4>
+            <p>Vehículo facturado SBG625</p>
+          </div>
+        </div>
+
+        <div class="notifi-item">
+          <img src="../img/mujer.png" alt="img">
+          <div class="text">
+            <h4>Jane Diaz @Asesor</h4>
+            <p>Ingresa vehículo MLY676</p>
+          </div>
+        </div>
+        <div class="notifi-item">
+          <img src="../img/nino.png" alt="img">
+          <div class="text">
+            <h4>Jhon Valencia @Mecanico</h4>
+            <p>Envia cotizacion PFD481</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      <label for="derecha">
+        <img src="../img/foto_perfil.jpg" alt="Foto de perfil">
+      </label>
+    </div>
+  </header>
+
+  <!--checkbox-->
+  <input type="checkbox" id="izquierda">
+  <input type="checkbox" id="derecha">
+  <!--barra lateral-->
+  <div class="barras">
+    <div class="izquierda-barra">
+      <nav id="">
+        <div class="cerrar-barra-izquierda">
+          <img src="../img/logo.png" alt="" srcset="" width="30px">
+          <label for="izquierda">
+            <ion-icon name="exit-outline"></ion-icon>
+          </label>
+        </div>
+        <div class="navegacion">
+          <ul>
+            <li onclick="location.href='../html/inicio.html'"><a href=""><i
+              class="fas fa-home"></i><span>Inicio</span></a></li>
+        <li onclick="location.href='../html/F.InventarioVehiculos.html'"><a href=""><i class="fas fa-tools"></i><span>Taller</span></a></li>
+        <li onclick="location.href='../html/estados.html'"><a href=""><i
+              class="fas fa-building"></i><span>Recepcion</span></a></li>
+
+        <li onclick="location.href='../html/caja.html'"><a><i class="fas fa-cash-register"></i><span>Caja</span></a>
+        </li>
+
+        <li onclick="location.href='../html/vehiculosM.html'"><a><i
+              class="fa-solid fa-car"></i><span>vehiculos</span></a></li>
+
+        <li onclick="location.href='../html/InventarioFotos.html'"><a href="#"><i
+              class="fas fa-archive"></i><span>Inventario</span></a></li>
+     
+     
+        <li  onclick="location.href='../html/encuesta.html'" id="encuesta-li">
+          <a><i class="fas fa-poll"></i><span>Encuesta</span></a>
+      </li>
+
+
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <div class="derecha">
+      <div class="usuario">
+        <img src="../img/foto_perfil.jpg" alt="Foto de perfil" class="">
+        <h3>nombre de usuario</h3>
+        <p></p>
+        <label for="derecha"><i class="bi bi-box-arrow-left"></i></label>
+      </div>
+      <div class="descripción">
+
+        <p id="P">descripción<strong></strong></p>
+      </div>
+      <nav class="navegacion-derecha">
+        <ul class="ul">
+          <li onclick="location.href='../html/perfil.html'"><a><i class="fas fa-user"></i> <span>perfil</span></a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> <span>configuraciones</span></a></li>
+          <li onclick="location.href='../html/notificaciones_insanas.html'"><a href="#"><i class="fas fa-bell"></i> <span>notificaciones</span></a></li>
+          <li onclick="location.href='../../index.html'" id="miBoton"><a><i class="fas fa-sign-out-alt"></i><span>cerrar
+                sesion</span></a></li>
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </div>
+  <div class="container">
+    <!-- Sidebar con perfil -->
+    <aside class="profile-sidebar">
+        <img src="../img/foto_perfil.jpg" alt="Foto de perfil" class="profile-image">
+        <h1 class="profile-name">Joel Insano</h1>
+        <p class="profile-email">joelservitec@gmail.com</p>
+        
+        <nav>
+            <ul class="profile-nav">
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link active" onclick="cambiarPagina('general')">
+                        👤 Descripción General
+                    </a>
+                </li>
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link" onclick="cambiarPagina('editar')">
+                        ✏️ Editar Perfil
+                    </a>
+                </li>
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link" onclick="cambiarPagina('password')">
+                        🔒 Cambiar Contraseña
+                    </a>
+                </li>
+                <li class="profile-nav-item">
+                    <a class="profile-nav-link" onclick="cambiarPagina('ajustes')">
+                        ⚙️ Ajustes
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Área de contenido principal -->
+    <main id="content-area" class="content-area">
+        <!-- El contenido se insertará aquí -->
+    </main>
+</div>
+
+<script>
+    // Contenido de las páginas
+    const paginas = {
+        general: `
+            <div class="page-container">
+                <h2 class="page-title">Descripción General</h2>
+                <div class="form-group">
+                    <p><strong>Nombre:</strong> Joel Insano</p>
+                    <p><strong>Email:</strong>joelservitec@gmail.com</p>
+                    <p><strong>Ubicación:</strong> Medellín, Colombia</p>
+                    <p><strong>Miembro desde:</strong> 6 de agosto de 2024</p>
+                    <p><strong>Último acceso:</strong> Hace 2 horas</p>
+                </div>
+                <div class="form-group">
+                    <h3>Biografía</h3>
+                    <p>Técnico automotriz con 2 años de experiencia en el área de reparación y mantenimiento de vehículos. Apasionado por el mundo del motor, me especializo en ofrecer soluciones rápidas y eficaces para garantizar el funcionamiento óptimo de los autos. Mi objetivo es brindar un servicio de calidad, asegurando la satisfacción de los clientes con cada reparación. Siempre en busca de mejorar mis habilidades y enfrentar nuevos desafíos para brindar el mejor servicio posible.
+
+</p>
+                </div>
+            </div>
+        `,
+        editar: `
+        <div class="page-container ojo">
+    <h2 class="page-title">Editar Perfil</h2>
+    <form>
+        <div class="form-group">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-input" value="Joel Insano">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" value="joelservitec@gmail.com">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Ubicación</label>
+            <input type="text" class="form-input" value="Medellín, Colombia">
+        </div>
+        <div class="form-group">
+            <label class="form-label">Biografía</label>
+            <textarea class="form-input">Técnico automotriz con 2 años de experiencia en el área de reparación y mantenimiento de vehículos. Apasionado por el mundo del motor, me especializo en ofrecer soluciones rápidas y eficaces para garantizar el funcionamiento óptimo de los autos. Mi objetivo es brindar un servicio de calidad, asegurando la satisfacción de los clientes con cada reparación. Siempre en busca de mejorar mis habilidades y enfrentar nuevos desafíos para brindar el mejor servicio posible.</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+    </form>
+</div>
+
+        `,
+        password: `
+            <div class="page-container">
+                <h2 class="page-title">Cambiar Contraseña</h2>
+                <form>
+                    <div class="form-group">
+                        <label class="form-label">Contraseña Actual</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nueva Contraseña</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Confirmar Nueva Contraseña</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Actualizar Contraseña</button>
+                </form>
+            </div>
+        `,
+        ajustes: `
+        <div class="page-container">
+    <h2 class="page-title">Ajustes</h2>
+    <form>
+        <div class="form-group">
+            <label class="form-label">Idioma</label>
+            <select class="form-input">
+                <option>Español</option>
+                <option>English</option>
+                <option>Français</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label">Zona Horaria</label>
+            <select class="form-input">
+                <option>(GMT-05:00) Bogotá, Colombia</option>
+                <option>(GMT-05:00) Nueva York, EE.UU.</option>
+                <option>(GMT+09:00) Tokio, Japón</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label class="form-label">
+                <input type="checkbox" checked> Recibir notificaciones por email
+            </label>
+        </div>
+        <div class="form-group">
+            <label class="form-label">
+                <input type="checkbox" checked> Perfil público
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar Preferencias</button>
+    </form>
+</div>
+
+        `
+    };
+
+    // Función para cambiar el contenido
+    function cambiarPagina(pagina) {
+        // Actualizar navegación
+        document.querySelectorAll('.profile-nav-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        event.target.classList.add('active');
+
+        // Cambiar contenido
+        document.getElementById('content-area').innerHTML = paginas[pagina];
+    }
+
+    // Cargar la página inicial
+    window.onload = () => cambiarPagina('general');
+</script>
+<!-- Modal de encuesta -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+      <div class="formulario_encuesta">
+          <span class="close"><i class="fas fa-sign-out-alt"></i></span>
+          <div class="titulo_encuesta">
+              <h2>ENVIAR ENCUESTA AL CLIENTE</h2>
+          </div>
+          <div class="formulario_encuesta">
+              <label for="">correo</label>
+              <input type="text">
+          
+              <label for="clientType">Tipo de Cliente</label>
+              <select id="clientType" name="clientType" required>
+                  <option value="">Seleccione una opción</option>
+                  <option value="individual">Individual</option>
+                  <option value="empresa">Empresa</option>
+                  <option value="gobierno">Gobierno</option>
+              </select>
+          </div>
+          <div class="boton_enviar_encuesta">
+              <button type="submit">enviar</button>
+          </div>
+      </div>
+  </div>
+</div>
+<script src="../js/modal.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/notificacion.js"></script>
+  <script src="../js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
