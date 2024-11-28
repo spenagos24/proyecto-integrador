@@ -7,7 +7,9 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
-
+.modal{
+    display: none;
+}
 .form-container {
     width: 70%;
     margin: 0 auto;

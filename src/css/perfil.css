@@ -471,7 +471,9 @@
     background-color: var(--gray-50);
     color: var(--primary-color);
 }
-
+.modal{
+  display: none;
+}
 .profile-nav-link.active {
     background-color: var(--primary-color);
     color: white;
