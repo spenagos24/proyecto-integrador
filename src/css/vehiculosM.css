@@ -103,7 +103,9 @@
   #box{
     display: none;
   }
-  
+  .modal{
+    display: none;
+  }
   .notifi-box {
   
    border-radius: 12px;
