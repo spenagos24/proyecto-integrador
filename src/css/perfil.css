@@ -507,7 +507,7 @@ iframe {
 .form-group {
     margin-bottom: rem;
     margin-left: 20px;
-    border: 2px solid red;
+
 }
 .form-group p{
   padding: 20px;
@@ -527,7 +527,7 @@ iframe {
     border-radius: 0.5rem;
     font-size: 1rem;
     transition: all 0.2s ease;
-    border: 3px solid red;
+  
 }
 
 .form-input:focus {
